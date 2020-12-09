@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+group = "maow"
+archivesBaseName = "sdfadapterxml"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation "io.github.maowcraft:javasdf:master-SNAPSHOT"
+    implementation "dom4j:dom4j:1.6.1"
+}
